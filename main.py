@@ -367,6 +367,7 @@ def shop_text(shop_id):
 user_states = {}
 
 async def handle_msg(msg):
+    global userbot_client
     chat_id = msg["chat"]["id"]
     user_id = msg["from"]["id"]
     text = msg.get("text", "").strip()
@@ -408,7 +409,6 @@ async def handle_msg(msg):
             await client.sign_in(login_data["phone"], raw, phone_code_hash=login_data["hash"])
             me = await client.get_me()
             # Session saqlandi, userbotni ishga tushiramiz
-            global userbot_client
             from telethon import events
             @client.on(events.NewMessage(from_users=CARDXABAR_BOT))
             async def on_payment(event):
@@ -442,7 +442,6 @@ async def handle_msg(msg):
         try:
             await client.sign_in(password=text)
             me = await client.get_me()
-            global userbot_client
             from telethon import events
             @client.on(events.NewMessage(from_users=CARDXABAR_BOT))
             async def on_payment2(event):
