@@ -11,7 +11,7 @@ from datetime import datetime
 from aiohttp import web
 
 # ─── SOZLAMALAR ───────────────────────────────────────────────────────────────
-BOT_TOKEN      = "8837669936:AAEadzLMjkKY-o_VFreu_mpTZ_SXZaOClTk"
+BOT_TOKEN      = "8837669936:AAFLFLe-PhSe9rRWUskF3ey-45R4GRLKVFI"
 USERBOT_API_ID   = 37386003
 USERBOT_API_HASH = "31f7b57e49ca12e6ac083fccc73e5aa0"
 CARDXABAR_BOT  = "CardXabarBot"
